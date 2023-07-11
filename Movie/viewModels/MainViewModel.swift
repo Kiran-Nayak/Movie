@@ -62,7 +62,7 @@ class MainViewModel {
         case .Actors:
             var set = Set<String>()
             data?.forEach({
-                getData(str: $0?.Director ?? "").forEach {
+                getData(str: $0?.Actors ?? "").forEach {
                     set.insert($0 ?? "")
                 }
             })
